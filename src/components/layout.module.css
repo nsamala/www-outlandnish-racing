@@ -1,0 +1,55 @@
+#site-wrapper {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav {
+  float: right;
+  padding-top: 2em;
+  padding-right: 2em;
+}
+
+.navlink {
+  display: inline-block;
+  padding-right: 1rem;
+  font-family: rabbidHighway;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+ul .navlink a:after {
+  content: '.';
+  color: #24baa3;
+}
+
+.navlink a:visited {
+  color: #fff;
+}
+
+.navlink a:active {
+  color: #00796b;
+}
+
+.navlink a:hover {
+  color: #00796b
+}
+
+#logo {
+  width: 200px;
+  padding-left: 2em;
+  padding-top: 2em;
+}

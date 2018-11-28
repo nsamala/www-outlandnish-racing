@@ -1,0 +1,31 @@
+.hero-ta {
+  background-image: url(../../../images/home-ta.jpg);
+  background-position: 50% 0%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.hero-drift {
+  background-image: url(../../../images/home-drift.jpg);
+  background-position: 50% 0%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.hero-text {
+  text-align: right;
+  padding-right: 2em;
+  padding-top: 12em;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
