@@ -8,6 +8,11 @@
   src: url(../fonts/didactgothic-regular.otf);
 }
 
+@font-face {
+  font-family: foxing;
+  src: url(../fonts/foxing.otg);
+}
+
 html { 
   font-family: didactGothic;
   font-size: 1.0em;
