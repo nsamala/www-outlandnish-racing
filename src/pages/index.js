@@ -1,28 +1,48 @@
-import React from "react"
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import React, { Component } from "react"
 import Layout from '../components/layout'
+import { checkAndFixSection } from '../utils'
 
-export default ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'outlandnish racing' },
-        { name: 'keywords', content: 'outlandnish, racing, time attack, drift, drifting' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
-      ]}
-    />
-    <Layout children={children} />
-  </div>
-)
+// sections
+import Hero from './sections/hero'
+import About from './sections/about'
+import Season from './sections/season'
+import Partners from './sections/partners'
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+let scrolling = false
+
+class Home extends Component {
+
+  componentDidMount() {
+    this.scrolling = false
+    document.onscroll = this.flagScrolling
+
+    var aboutFixed = false,
+      seasonFixed = false,
+      partnersFixed = false
+
+    setInterval(() => {
+      if (scrolling === true) {
+        aboutFixed = checkAndFixSection('about', 'left', aboutFixed)
+        seasonFixed = checkAndFixSection('season', 'right', seasonFixed)
+        partnersFixed = checkAndFixSection('partners', 'left', partnersFixed)
       }
-    }
+    }, 100)
   }
-`
+
+  flagScrolling() {
+    scrolling = true
+  }
+
+  render() {
+    return (
+      <Layout>
+        <Hero></Hero>
+        <About></About>
+        <Season></Season>
+        <Partners></Partners>
+      </Layout>
+    )
+  }
+}
+
+export default Home

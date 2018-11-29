@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Layout from '../components/layout'
-import { checkAndFixSection } from '../common'
+import { checkAndFixSection } from '../utils'
 
 // sections
 import Hero from './sections/hero'
