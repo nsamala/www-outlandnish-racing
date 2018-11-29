@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         "name": "2019 Season",
-        "link": "#sesason"
+        "link": "#season"
       },
       {
         "name": "Partners",

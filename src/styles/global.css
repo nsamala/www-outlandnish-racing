@@ -69,19 +69,19 @@ h4 {
   overflow: auto;
 }
 
-.chapter-title-wrapper {
+.section-feature-wrapper {
   float: left;
   width: 60%;
   transition: 1s width cubic-bezier(.77, 0, 0.175, 1);
   height: 100vh;
 }
 
-.chapter-title {
+.section-feature {
   width: 100%;
   height: 100vh;
 }
 
-.chapter-title-fixed-left {
+.section-feature-fixed-left {
   position: fixed;
   left: 0px;
   bottom: 0px;
@@ -89,7 +89,7 @@ h4 {
   height: 100vh;
 }
 
-.chapter-title-fixed-right {
+.section-feature-fixed-right {
   position: fixed;
   right: 0px;
   bottom: 0px;
@@ -97,7 +97,7 @@ h4 {
   height: 100vh;
 }
 
-.chapter-content-wrapper {
+.section-content-wrapper {
   float: left;
   width: 40%;
   background-color: #24baa3;
@@ -113,25 +113,36 @@ h4 {
   background-color: #00796b;
 }
 
-.chapter-content {
+.section-content {
   margin: 12em 3em;
 }
 
-.chapter-content h1 {
+.section-content h1 {
   font-size: 4.75em;
   margin: 0;
   padding: 0;
   font-family: rabbidHighway;
 }
 
-.chapter-content p {
+.section-content p {
   font-size: 1.25em;
   margin: 0; 
   line-height: 1.4em;
 } 
 
-.chapter-content p a {
+.section-content p a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 } 
+
+.section-feature-image {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-feature-blank {
+  height: 100vh;
+  background-color: #00796b;
+}

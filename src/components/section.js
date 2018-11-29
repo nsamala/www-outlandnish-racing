@@ -2,13 +2,13 @@ import React from "react"
 
 export const LeftSection = ({children, id, theme, feature}) => (
   <section className={['fullpage-section', 'block'].join(' ')} id={id}>
-    <div className='chapter-title-wrapper'>
-      <div className='chapter-title'>
+    <div className='section-feature-wrapper'>
+      <div className='section-feature'>
         {feature}
       </div>
     </div>
-    <div className={['chapter-content-wrapper', theme].join(' ')}>
-      <div className={'chapter-content'}>
+    <div className={['section-content-wrapper', theme].join(' ')}>
+      <div className={'section-content'}>
         {children}
       </div>
     </div>
@@ -17,13 +17,13 @@ export const LeftSection = ({children, id, theme, feature}) => (
 
 export const RightSection = ({children, id, theme, feature}) => (
   <section className={['fullpage-section', 'block'].join(' ')} id={id}>
-    <div className={['chapter-content-wrapper', theme].join(' ')}>
-      <div className={'chapter-content'}>
+    <div className={['section-content-wrapper', theme].join(' ')}>
+      <div className={'section-content'}>
         {children}
       </div>
     </div>
-    <div className='chapter-title-wrapper'>
-      <div className='chapter-title'>
+    <div className='section-feature-wrapper'>
+      <div className='section-feature'>
         {feature}
       </div>
     </div>

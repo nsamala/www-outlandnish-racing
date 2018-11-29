@@ -3,12 +3,12 @@ import sectionStyles from './setup.module.css'
 
 export default () => (
   <section className={['fullpage-section', 'block'].join(' ')} id="partners">
-    <div className='chapter-title-wrapper'>
-      <div className={['chapter-title', sectionStyles.sectionImg].join(' ')}>
+    <div className='section-feature-wrapper'>
+      <div className={['section-feature', sectionStyles.sectionImg].join(' ')}>
       </div>
     </div>
-    <div className='chapter-content-wrapper wrapper-dark'>
-      <div className='chapter-content'>
+    <div className='section-content-wrapper wrapper-dark'>
+      <div className='section-content'>
         <h4 className='highlight'>Setup</h4>
         <p>A number of high quality parts help this car get going (with some fun flairs):</p>
         <h5>Suspension</h5>

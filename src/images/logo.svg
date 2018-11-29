@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 195.39 110.09"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3,.cls-5{font-size:50px;font-family:Foxing;}.cls-3,.cls-6{fill:#fff;}.cls-4{letter-spacing:0em;}.cls-5{fill:#00bfa5;}.cls-6{font-size:20px;font-family:RabbidHighwaySignII, Rabbid Highway Sign II;}</style><clipPath id="clip-path"><rect class="cls-1" x="0.02" y="0.16" width="192.17" height="102.21"/></clipPath></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><text class="cls-3" transform="translate(6.11 72.43) rotate(-7)"><tspan class="cls-4">Out</tspan><tspan x="56.2" y="0">land</tspan></text><text class="cls-5" transform="translate(126.36 57.67) rotate(-7)">ni<tspan class="cls-4" x="27.91" y="0">s</tspan><tspan x="42.36" y="0">h</tspan></text><text class="cls-6" transform="translate(107.44 99.37)">RACING</text></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 195.39 110.09">
+    <defs>
+        <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3,.cls-5{font-size:50px;font-family:Foxing;}.cls-3,.cls-6{fill:#fff;}.cls-7{fill:#000}.cls-4{letter-spacing:0em;}.cls-5{fill:#00bfa5;}.cls-6{font-size:20px;font-family:RabbidHighwaySignII, Rabbid Highway Sign II;}</style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="0.02" y="0.16" width="192.17" height="102.21" />
+        </clipPath>
+    </defs>
+    <title>Asset 1</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g class="cls-2">
+                <text id="logo-outland" class="cls-3" transform="translate(6.11 72.43) rotate(-7)">
+                    <tspan class="cls-4">Out</tspan>
+                    <tspan x="56.2" y="0">land</tspan>
+                </text>
+                <text class="cls-5" transform="translate(126.36 57.67) rotate(-7)">ni<tspan class="cls-4" x="27.91" y="0">s</tspan><tspan x="42.36" y="0">h</tspan></text>
+                <text id="logo-racing" class="cls-6" transform="translate(107.44 99.37)">RACING</text>
+            </g>
+        </g>
+    </g>
+</svg>

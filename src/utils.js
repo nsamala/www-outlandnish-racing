@@ -4,12 +4,12 @@ export function checkAndFixSection(sectionName, side, fixed) {
   if (side === 'left') {
     contentTitle = section.children[0].children[0]
     contentArea = section.children[1]
-    fixedClass = 'chapter-title-fixed-left'
+    fixedClass = 'section-feature-fixed-left'
   }
   else if (side === 'right') {
     contentTitle = section.children[1].children[0]
     contentArea = section.children[0]
-    fixedClass = 'chapter-title-fixed-right'
+    fixedClass = 'section-feature-fixed-right'
   }
 
   let sectionRect = section.getBoundingClientRect()

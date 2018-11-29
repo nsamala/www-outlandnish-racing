@@ -37,13 +37,9 @@ class Home extends Component {
 
   render() {
     let data = this.props.data
-    let partnersStyle = {
-      backgroundColor: "#fff",
-      height: "100vh"
-    }
-    let aboutImage = (<Img fluid={data.aboutImage.childImageSharp.fluid} />)
-    let seasonImage = (<Img fluid={data.seasonImage.childImageSharp.fluid} />)
-    let partnersFeature = (<div style={partnersStyle}></div>)
+    let aboutImage = (<Img fluid={data.aboutImage.childImageSharp.fluid} fadeIn={true} className='section-feature-image' />)
+    let seasonImage = (<Img fluid={data.seasonImage.childImageSharp.fluid} fadeIn={true} className='section-feature-image' />)
+    let partnersFeature = (<div className='section-feature-blank'></div>)
     return (
       <Layout>
         <HeroWrapper></HeroWrapper>
