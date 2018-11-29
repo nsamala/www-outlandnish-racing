@@ -1,6 +1,16 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+        ignore: [`**/\.*`,`**/\.svg`], // ignore files starting with a dot
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
   siteMetadata: {
     title: `Outlandnish Racing`,

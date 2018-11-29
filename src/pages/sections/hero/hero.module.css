@@ -1,31 +1,31 @@
-.hero-ta {
-  background-image: url(../../../images/home-ta.jpg);
-  background-position: 50% 0%;
-  background-size: 110%;
-  background-repeat: no-repeat;
-  z-index: -1;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
-}
-
-.hero-drift {
-  background-image: url(../../../images/home-drift.jpg);
-  background-position: 50% 0%;
-  background-size: 110%;
-  background-repeat: no-repeat;
-  z-index: -1;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
-}
-
 .hero-text {
   text-align: right;
   padding-right: 2em;
   padding-top: 12em;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-bottom {
   position: absolute;
   bottom: 2em;
   right: 2em;
+  z-index: 1;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.hero-image-wrapper-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
 }

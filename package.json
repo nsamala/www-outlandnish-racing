@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "gatsby": "^2.0.33",
+    "gatsby-image": "^2.0.21",
     "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.13",
+    "gatsby-source-filesystem": "^2.0.9",
+    "gatsby-transformer-sharp": "^2.1.8",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
