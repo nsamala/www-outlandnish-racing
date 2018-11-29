@@ -1,5 +1,4 @@
 import React from "react"
-import sectionStyles from './partners.module.css'
 
 import { LeftSection } from '../../../components/section'
 

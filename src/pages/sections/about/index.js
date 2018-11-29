@@ -1,5 +1,4 @@
-import React, { Component } from "react"
-import sectionStyles from './about.module.css'
+import React from "react"
 
 import { LeftSection } from '../../../components/section'
 

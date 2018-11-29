@@ -5,8 +5,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
-        ignore: [`**/\.*`,`**/\.svg`], // ignore files starting with a dot
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,

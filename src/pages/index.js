@@ -37,9 +37,13 @@ class Home extends Component {
 
   render() {
     let data = this.props.data
+    let partnersStyle = {
+      backgroundColor: "#fff",
+      height: "100vh"
+    }
     let aboutImage = (<Img fluid={data.aboutImage.childImageSharp.fluid} />)
     let seasonImage = (<Img fluid={data.seasonImage.childImageSharp.fluid} />)
-    let partnersFeature = (<div style="background-color:#fff; height:100vh;"></div>)
+    let partnersFeature = (<div style={partnersStyle}></div>)
     return (
       <Layout>
         <Hero taImage={data.taImage} driftImage={data.driftImage}></Hero>
@@ -53,35 +57,39 @@ class Home extends Component {
 
 export default Home
 
-export const heroQuery = graphql`
-  query HomePageQuery {
+export const heroImage = graphql`
+fragment heroImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1352) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`
+
+export const featureImage = graphql`
+fragment featureImage on File {
+  childImageSharp {
+    fluid(maxWidth: 811) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`
+
+export const pageQuery = graphql`
+  query {
     driftImage: file(relativePath: { eq: "home-drift.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1352) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
+      ...heroImage
     },
     taImage: file(relativePath: { eq: "home-ta.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1352) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
+      ...heroImage
     },
     aboutImage: file(relativePath: { eq: "section-about.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 811) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    },
+      ...featureImage
+    }
     seasonImage: file(relativePath: { eq: "section-season.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 811) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
+      ...featureImage
     },
   }
 `

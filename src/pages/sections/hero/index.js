@@ -6,6 +6,18 @@ class Hero extends Component {
   constructor(props) {
     super(props)
     this.state = { showTA: true }
+
+    // hack for default nodes
+    this.props.taImage = {
+      childImageSharp: {
+        fluid: 'test'
+      }
+    }
+    this.props.driftImage = {
+      childImageSharp: {
+        fluid: 'test'
+      }
+    }
   }
 
   componentDidMount() {
@@ -27,7 +39,6 @@ class Hero extends Component {
     let taImageStyle = this.state.showTA === true ? sectionStyles.heroImageWrapper : [sectionStyles.heroImageWrapper, sectionStyles.heroImageWrapperHidden].join(' ')
     let driftImageStyle = this.state.showTA === false ? sectionStyles.heroImageWrapper : [sectionStyles.heroImageWrapper, sectionStyles.heroImageWrapperHidden].join(' ')
     let absolutePosition = { position: 'absolute' }
-
     return (
       <section className={['fullpage-section', 'block'].join(' ')}>
         <Img fluid={this.props.taImage.childImageSharp.fluid} fadeIn={true} className={taImageStyle} style={absolutePosition} />
