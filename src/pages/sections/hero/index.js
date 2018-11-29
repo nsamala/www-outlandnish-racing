@@ -1,23 +1,41 @@
 import React, { Component } from "react"
+import { StaticQuery, graphql } from 'gatsby'
 import sectionStyles from './hero.module.css';
 import Img from "gatsby-image"
+
+export const heroImage = graphql`
+fragment heroImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1352) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        taImage: file(relativePath: { eq: "home-ta.jpg" }) {
+          ...heroImage
+        },
+        driftImage: file(relativePath: { eq: "home-drift.jpg" }) {
+          ...heroImage
+        }
+      }
+    `
+    }
+    render={data=>(
+      <Hero taImage={data.taImage} driftImage={data.driftImage} />
+    )}
+  />
+)
 
 class Hero extends Component {
   constructor(props) {
     super(props)
     this.state = { showTA: true }
-
-    // hack for default nodes
-    this.props.taImage = {
-      childImageSharp: {
-        fluid: 'test'
-      }
-    }
-    this.props.driftImage = {
-      childImageSharp: {
-        fluid: 'test'
-      }
-    }
   }
 
   componentDidMount() {
@@ -54,5 +72,3 @@ class Hero extends Component {
     )
   }
 }
-
-export default Hero

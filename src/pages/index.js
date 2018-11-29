@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 // sections
-import Hero from './sections/hero'
+import HeroWrapper from './sections/hero'
 import About from './sections/about'
 import Season from './sections/season'
 import Partners from './sections/partners'
@@ -46,7 +46,7 @@ class Home extends Component {
     let partnersFeature = (<div style={partnersStyle}></div>)
     return (
       <Layout>
-        <Hero taImage={data.taImage} driftImage={data.driftImage}></Hero>
+        <HeroWrapper></HeroWrapper>
         <About feature={aboutImage}></About>
         <Season feature={seasonImage}></Season>
         <Partners feature={partnersFeature}></Partners>
@@ -57,15 +57,7 @@ class Home extends Component {
 
 export default Home
 
-export const heroImage = graphql`
-fragment heroImage on File {
-  childImageSharp {
-    fluid(maxWidth: 1352) {
-      ...GatsbyImageSharpFluid
-    }
-  }
-}
-`
+
 
 export const featureImage = graphql`
 fragment featureImage on File {
@@ -79,17 +71,12 @@ fragment featureImage on File {
 
 export const pageQuery = graphql`
   query {
-    driftImage: file(relativePath: { eq: "home-drift.jpg" }) {
-      ...heroImage
-    },
-    taImage: file(relativePath: { eq: "home-ta.jpg" }) {
-      ...heroImage
-    },
+    
     aboutImage: file(relativePath: { eq: "section-about.jpg" }) {
       ...featureImage
     }
     seasonImage: file(relativePath: { eq: "section-season.jpg" }) {
       ...featureImage
-    },
+    }
   }
 `
