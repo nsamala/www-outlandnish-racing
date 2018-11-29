@@ -3,7 +3,7 @@ import React from "react"
 import { RightSection } from '../../../components/section'
 
 export default ({ feature }) => (
-  <RightSection id="season" theme="wrapper-black" feature={feature}>
+  <RightSection id="season" feature={feature}>
     <h1 className='highlight'>2019.</h1>
     <p className="subheader">The only duo in the Midwest to participate in <span className='highlight'>time attack + drift</span></p>
     <br/>

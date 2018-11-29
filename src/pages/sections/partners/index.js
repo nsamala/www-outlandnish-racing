@@ -3,7 +3,7 @@ import React from "react"
 import { LeftSection } from '../../../components/section'
 
 export default ({feature}) => (
-  <LeftSection id="partners" theme="" feature={feature}>
+  <LeftSection id="partners" feature={feature}>
     <h1 className='highlight-dark'>Partners</h1>
     <p className="subheader">I'll be working together with these partners in 2019 to make it a successful season.</p>
     <br/>

@@ -3,7 +3,7 @@ import React from "react"
 import { LeftSection } from '../../../components/section'
 
 export default ({ feature }) => (
-  <LeftSection id="about" theme="" feature={feature}>
+  <LeftSection id="about" feature={feature}>
     <h1 className='highlight-dark'>Hi, I'm Nish.</h1>
     <h4 className='highlight-dark'>And this is my BRZ.</h4>
     <br/>
