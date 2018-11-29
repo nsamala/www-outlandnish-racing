@@ -1,15 +1,17 @@
+import sectionStyles from './components/section.module.css'
+
 export function checkAndFixSection(sectionName, side, fixed) {
   var contentArea, contentTitle, fixedClass
   let section = document.getElementById(sectionName)
   if (side === 'left') {
     contentTitle = section.children[0].children[0]
     contentArea = section.children[1]
-    fixedClass = 'section-feature-fixed-left'
+    fixedClass = sectionStyles.sectionFeatureFixedLeft
   }
   else if (side === 'right') {
     contentTitle = section.children[1].children[0]
     contentArea = section.children[0]
-    fixedClass = 'section-feature-fixed-right'
+    fixedClass = sectionStyles.sectionFeatureFixedRight
   }
 
   let sectionRect = section.getBoundingClientRect()

@@ -9,6 +9,7 @@ import HeroWrapper from './sections/hero'
 import About from './sections/about'
 import Season from './sections/season'
 import Partners from './sections/partners'
+import sectionStyles from './../components/section.module.css'
 
 let scrolling = false
 
@@ -37,10 +38,13 @@ class Home extends Component {
 
   render() {
     let data = this.props.data
-    let avatarImage = (<Img fluid={data.avatarImage.childImageSharp.fixed} fadeIn={true} className='section-avatar' />)
-    let aboutImage = (<Img fluid={data.aboutImage.childImageSharp.fluid} fadeIn={true} className='section-feature-image' />)
-    let seasonImage = (<Img fluid={data.seasonImage.childImageSharp.fluid} fadeIn={true} className='section-feature-image' />)
-    let partnersFeature = (<div className='section-feature-blank'></div>)
+    let avatarStyle = {
+      position: 'absolute'
+    }
+    let avatarImage = (<Img fixed={data.avatarImage.childImageSharp.fixed} fadeIn={true} className={sectionStyles.sectionAvatar} style={avatarStyle} />)
+    let aboutImage = (<Img fluid={data.aboutImage.childImageSharp.fluid} fadeIn={true} className={sectionStyles.sectionFeatureImage} />)
+    let seasonImage = (<Img fluid={data.seasonImage.childImageSharp.fluid} fadeIn={true} className={sectionStyles.sectionFeatureImage} />)
+    let partnersFeature = (<div className={sectionStyles.sectionFeatureBlank}></div>)
     return (
       <Layout>
         <HeroWrapper></HeroWrapper>

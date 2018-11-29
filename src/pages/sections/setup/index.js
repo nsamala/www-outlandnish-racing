@@ -1,10 +1,9 @@
 import React from "react"
-import sectionStyles from './setup.module.css'
 
 export default () => (
-  <section className={['fullpage-section', 'block'].join(' ')} id="partners">
+  <section className='fullpage-section' id="setup">
     <div className='section-feature-wrapper'>
-      <div className={['section-feature', sectionStyles.sectionImg].join(' ')}>
+      <div className='section-feature'>
       </div>
     </div>
     <div className='section-content-wrapper wrapper-dark'>

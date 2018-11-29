@@ -1,33 +1,34 @@
 import React from "react"
+import sectionStyles from './section.module.css'
 
 export const LeftSection = ({children, id, feature, divider}) => (
-  <section className={['fullpage-section', 'block'].join(' ')} id={id}>
-    <div className='section-feature-wrapper'>
-      <div className='section-feature'>
+  <section className='fullpage-section' id={id}>
+    <div className={sectionStyles.sectionFeatureWrapper}>
+      <div className={sectionStyles.sectionFeature}>
         {feature}
       </div>
     </div>
-    {divider}
-    <div className='section-content-wrapper'>
-      <div className={'section-content'}>
+    <div className={sectionStyles.sectionContentWrapper}>
+      <div className={sectionStyles.sectionContent}>
         {children}
       </div>
     </div>
+    {divider}
   </section>
 )
 
 export const RightSection = ({children, id, feature, divider}) => (
-  <section className={['fullpage-section', 'block'].join(' ')} id={id}>
-    <div className='section-content-wrapper'>
-      <div className={'section-content'}>
+  <section className='fullpage-section' id={id}>
+    <div className={sectionStyles.sectionContentWrapper}>
+      <div className={sectionStyles.sectionContent}>
         {children}
       </div>
     </div>
-    {divider}
-    <div className='section-feature-wrapper'>
-      <div className='section-feature'>
+    <div className={sectionStyles.sectionFeatureWrapper}>
+      <div className={sectionStyles.sectionFeature}>
         {feature}
       </div>
     </div>
+    {divider}
   </section>
 )

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { StaticQuery, graphql } from 'gatsby'
-import sectionStyles from './hero.module.css';
+import heroStyles from './hero.module.css';
 import Img from "gatsby-image"
 
 export const heroImage = graphql`
@@ -54,18 +54,18 @@ class Hero extends Component {
     let showDrift = this.state.showTA === false ? 'highlight' : ''
     let showTA = this.state.showTA === true ? 'highlight' : ''
     
-    let taImageStyle = this.state.showTA === true ? sectionStyles.heroImageWrapper : [sectionStyles.heroImageWrapper, sectionStyles.heroImageWrapperHidden].join(' ')
-    let driftImageStyle = this.state.showTA === false ? sectionStyles.heroImageWrapper : [sectionStyles.heroImageWrapper, sectionStyles.heroImageWrapperHidden].join(' ')
+    let taImageStyle = this.state.showTA === true ? heroStyles.heroImageWrapper : [heroStyles.heroImageWrapper, heroStyles.heroImageWrapperHidden].join(' ')
+    let driftImageStyle = this.state.showTA === false ? heroStyles.heroImageWrapper : [heroStyles.heroImageWrapper, heroStyles.heroImageWrapperHidden].join(' ')
     let absolutePosition = { position: 'absolute' }
     return (
-      <section className={['fullpage-section', 'block'].join(' ')}>
+      <section className='fullpage-section'>
         <Img fluid={this.props.taImage.childImageSharp.fluid} fadeIn={true} className={taImageStyle} style={absolutePosition} />
         <Img fluid={this.props.driftImage.childImageSharp.fluid} fadeIn={true} className={driftImageStyle} style={absolutePosition} />
-        <div className={sectionStyles.heroText}>
+        <div className={heroStyles.heroText}>
           <h2>One Derp<span className="highlight">.</span> One Car<span className="highlight">.</span></h2>
           <h3>Two Disciplines<span className="highlight">.</span></h3>
         </div>
-        <div className={sectionStyles.heroBottom}>
+        <div className={heroStyles.heroBottom}>
           <h4><span className={showTA}>Time Attack</span> + <span className={showDrift}>Drift</span><span className="highlight">.</span></h4>
         </div>
       </section>

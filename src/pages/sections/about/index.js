@@ -13,7 +13,7 @@ export default ({ feature, avatar }) => (
     <br/>
     <p>You’ll find me at #GRIDLIFE TrackBattle, Super D: Midwest, and other awesome spots for track goodness.</p>
     <br/>
-    <p>I help organize <a href="https://midwest86cup.com">Midwest 86 CUP</a>. You’ll find me competing in Street class for all the glory.</p>
+    <p>I help organize <a href="https://midwest86cup.com">Midwest 86 CUP</a>. Join me in Street class competing for all the glory.</p>
     <br/>
     <p>Wanna hear more? Listen to my escapades and adventures on <a href="http://thebrakefastclub.com">the Brakefast Club</a>, which I co-host.</p>
     <br/>
