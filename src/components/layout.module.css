@@ -11,6 +11,8 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,212,255,0) 100%);
 }
 
 nav {
