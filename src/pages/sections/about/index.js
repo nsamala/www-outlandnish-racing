@@ -4,8 +4,8 @@ import { LeftSection } from '../../../components/section'
 
 export default ({ feature }) => (
   <LeftSection id="about" feature={feature}>
-    <h1 className='highlight-dark'>Hi, I'm Nish.</h1>
-    <h4 className='highlight-dark'>And this is my BRZ.</h4>
+    <h1>Hi, I'm Nish.</h1>
+    <h4>And this is my BRZ.</h4>
     <br/>
     <p>I'm a 26 year old Indian-American who loves to get going fast and sideways.</p>
     <br/>
@@ -18,6 +18,6 @@ export default ({ feature }) => (
     <p>Wanna hear more? Listen to my escapades and adventures on <a href="http://thebrakefastclub.com">the Brakefast Club</a>, which I co-host.</p>
     <br/>
     <br/>
-    <h4 className='highlight-dark'>Good vibes and silly times.</h4>
+    <h4>Good vibes and silly times.</h4>
   </LeftSection>
 )
