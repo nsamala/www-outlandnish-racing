@@ -2,8 +2,8 @@ import React from "react"
 
 import { LeftSection } from '../../../components/section'
 
-export default ({ feature }) => (
-  <LeftSection id="about" feature={feature}>
+export default ({ feature, avatar }) => (
+  <LeftSection id="about" feature={feature} divider={avatar}>
     <h1 className="highlight">Hi, I'm Nish.</h1>
     <h4 className="highlight-light">And this is my BRZ.</h4>
     <br/>

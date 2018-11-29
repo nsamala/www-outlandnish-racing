@@ -37,13 +37,14 @@ class Home extends Component {
 
   render() {
     let data = this.props.data
+    let avatarImage = (<Img fluid={data.avatarImage.childImageSharp.fixed} fadeIn={true} className='section-avatar' />)
     let aboutImage = (<Img fluid={data.aboutImage.childImageSharp.fluid} fadeIn={true} className='section-feature-image' />)
     let seasonImage = (<Img fluid={data.seasonImage.childImageSharp.fluid} fadeIn={true} className='section-feature-image' />)
     let partnersFeature = (<div className='section-feature-blank'></div>)
     return (
       <Layout>
         <HeroWrapper></HeroWrapper>
-        <About feature={aboutImage}></About>
+        <About feature={aboutImage} avatar={avatarImage}></About>
         <Season feature={seasonImage}></Season>
         <Partners feature={partnersFeature}></Partners>
       </Layout>
@@ -67,7 +68,13 @@ fragment featureImage on File {
 
 export const pageQuery = graphql`
   query {
-    
+    avatarImage: file(relativePath: { eq: "avatar.jpg"}) {
+      childImageSharp {
+        fixed(width: 150) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     aboutImage: file(relativePath: { eq: "section-about.jpg" }) {
       ...featureImage
     }
