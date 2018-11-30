@@ -28,7 +28,9 @@ export default ({ children }) => (
             meta={[
               { name: 'description', content: 'outlandnish racing' },
               { name: 'keywords', content: 'outlandnish, racing, time attack, drift, drifting' },
-              { name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+              { name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
+              { name: 'theme-color', content: '#00796b' },
+              { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
             ]}
         >
           <html lang="en" />

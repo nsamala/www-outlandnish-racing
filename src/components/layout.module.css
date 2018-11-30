@@ -4,7 +4,7 @@
   width: 100%;
   overflow: hidden;
   scroll-behavior: smooth;
-  transition: margin-left .3s linear;
+  transition: margin-left .3s;
 }
 
 .navlink {
@@ -54,7 +54,7 @@ ul .navlink a:after {
     z-index: 10;
     background-color: #000;
     overflow-x: hidden;
-    transition: 0.5s width linear;
+    transition: 0.5s width;
   }
 
   nav ul {
