@@ -1,12 +1,12 @@
 @font-face {
   font-family: rabbidHighway;
-  font-display: auto;
+  font-display: fallback;
   src: url(../fonts/RabbidHighwaySignII.otf);
 }
 
 @font-face {
   font-family: didactGothic;
-  font-display: auto;
+  font-display: fallback;
   src: url(../fonts/didactgothic-regular.otf);
 }
 

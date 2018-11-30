@@ -42,7 +42,6 @@
 
 .section-feature-image {
   position: relative;
-  height: 40vh;
   overflow: hidden;
 }
 
@@ -84,6 +83,10 @@
   .section-content h1 {
     font-size: 4em;
   }
+
+  .section-feature-image {
+    height: 40vh;
+  }
 }
 
 @media (min-width: 640px) {
@@ -105,7 +108,7 @@
   .section-feature-fixed-left {
     position: fixed;
     left: 0px;
-    top: 0px;
+    bottom: 0px;
     width: 60%;
     height: 100vh;
   }
@@ -113,9 +116,15 @@
   .section-feature-fixed-right {
     position: fixed;
     right: 0px;
-    top: 0px;
+    bottom: 0px;
     width: 60%;
     height: 100vh;
+  }
+
+  .section-feature-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .section-content-wrapper {
