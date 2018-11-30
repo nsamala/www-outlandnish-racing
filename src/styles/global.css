@@ -76,7 +76,7 @@ h4 {
 }
 
 @media (max-width: 640px) {
-  .desktop {
+  .hide-mobile {
     display: none;
   }
 
@@ -87,7 +87,7 @@ h4 {
 }
 
 @media (min-width: 640px) {
-  .mobile {
+  .hide-desktop {
     display: none;
   }
 

@@ -19,7 +19,7 @@ export const LeftSection = ({children, id, feature, divider, contentClass}) => (
 
 export const RightSection = ({children, id, feature, divider, contentClass}) => (
   <section className='fullpage-section' id={id}>
-  <div className={[sectionStyles.sectionFeatureWrapper, 'mobile'].join(' ')}>
+  <div className={[sectionStyles.sectionFeatureWrapper, 'hide-desktop'].join(' ')}>
     <div className={sectionStyles.sectionFeature}>
       {feature}
     </div>
@@ -29,7 +29,7 @@ export const RightSection = ({children, id, feature, divider, contentClass}) => 
         {children}
       </div>
     </div>
-    <div className={[sectionStyles.sectionFeatureWrapper, 'desktop'].join(' ')}>
+    <div className={[sectionStyles.sectionFeatureWrapper, 'hide-mobile'].join(' ')}>
       <div className={sectionStyles.sectionFeature}>
         {feature}
       </div>
