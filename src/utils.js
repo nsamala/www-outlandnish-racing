@@ -1,7 +1,5 @@
 import sectionStyles from './components/section.module.css'
 
-let isMobile = window.matchMedia("(max-width: 640px)")
-
 export function checkAndFixSection(sectionName, side, fixed) {
   var contentArea, contentTitle, fixedClass
   let section = document.getElementById(sectionName)
@@ -11,6 +9,7 @@ export function checkAndFixSection(sectionName, side, fixed) {
     fixedClass = sectionStyles.sectionFeatureFixedLeft
   }
   else if (side === 'right') {
+    let isMobile = window.matchMedia("(max-width: 640px)")
     if (isMobile.matches)
       contentTitle = section.children[0].children[0]
     else
