@@ -1,9 +1,10 @@
 import React from "react"
 
 import { LeftSection } from '../../../components/section'
+import aboutStyles from './about.module.css'
 
 export default ({ feature, avatar }) => (
-  <LeftSection id="about" feature={feature} divider={avatar}>
+  <LeftSection id="about" feature={feature} divider={avatar} contentClass={aboutStyles.contentBump}>
     <h1 className="highlight">Hi, I'm Nish.</h1>
     <h4 className="highlight-light">And this is my BRZ.</h4>
     <br/>

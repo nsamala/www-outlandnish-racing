@@ -14,7 +14,6 @@ import sectionStyles from './../components/section.module.css'
 let scrolling = false
 
 class Home extends Component {
-
   componentDidMount() {
     this.scrolling = false
     document.onscroll = this.flagScrolling

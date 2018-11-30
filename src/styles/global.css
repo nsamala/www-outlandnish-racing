@@ -24,7 +24,6 @@ body {
 }
 
 h1 {
-  font-size: 4.75em;
   margin: 0;
   padding: 0;
   font-family: rabbidHighway;
@@ -73,6 +72,26 @@ h4 {
 .fullpage-section {
   z-index: 0;
   min-height: 100vh;
-  overflow: auto;
   position: relative;
+}
+
+@media (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+
+  .fullpage-section {
+    overflow-y: auto;
+    overflow-x: inherit;
+  }
+}
+
+@media (min-width: 640px) {
+  .mobile {
+    display: none;
+  }
+
+  .fullpage-section {
+    overflow: auto;
+  }
 }
