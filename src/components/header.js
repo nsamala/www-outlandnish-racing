@@ -11,7 +11,7 @@ const ListLink = props => (
 
 export default ({menuLinks}) => (
   <header>
-    <ListLink to="#"><img src={logo} alt="Outlandnish Racing" id={layoutStyles.logo} /></ListLink>
+    <Link to="#"><img src={logo} alt="Outlandnish Racing" id={layoutStyles.logo} /></Link>
     <nav id={layoutStyles.nav}>
       <ul>
         {

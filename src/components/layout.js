@@ -30,7 +30,9 @@ export default ({ children }) => (
               { name: 'keywords', content: 'outlandnish, racing, time attack, drift, drifting' },
               { name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
             ]}
-          />
+        >
+          <html lang="en" />
+        </Helmet>
         <div id={layoutStyles.siteWrapper}>
           <Header menuLinks={data.site.siteMetadata.menuLinks} />
           {children}
