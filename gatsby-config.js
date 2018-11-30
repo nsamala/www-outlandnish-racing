@@ -9,7 +9,33 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/images/icons.png',
+        appName: 'Outlandnish Racing',
+        appDescription: 'The home for Outlandnish Racing',
+        developerName: 'Outlandnish',
+        developerURL: 'https://racing.outlandnish.com',
+        dir: 'auto',
+        lang: 'en-US',
+        background: '#00796b',
+        theme_color: '#00796b',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/',
+        version: '1.0',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          favicons: true,
+          firefox: true,
+          windows: true
+        }
+      }
+    }
   ],
   siteMetadata: {
     title: `Outlandnish Racing`,
