@@ -26,9 +26,9 @@ class Home extends Component {
       if (scrolling === true) {
         aboutFixed = checkAndFixSection('about', 'left', aboutFixed)
         seasonFixed = checkAndFixSection('season', 'right', seasonFixed)
-        partnersFixed = checkAndFixSection('partners', 'left', partnersFixed)
+        //partnersFixed = checkAndFixSection('partners', 'left', partnersFixed)
       }
-    }, 100)
+    }, 250)
   }
 
   flagScrolling() {

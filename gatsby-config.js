@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: './src/images/icons.png',
-        appName: 'Outlandnish Racing',
+        appName: '#NS Racing',
         appDescription: 'The home for Outlandnish Racing',
         developerName: 'Outlandnish',
         developerURL: 'https://racing.outlandnish.com',
@@ -34,8 +34,18 @@ module.exports = {
           firefox: true,
           windows: true
         }
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['rabbidHighway', 'didactGothic'],
+          urls: ['src/styles/global.css']
+        }
       }
-    }
+    },
+    `gatsby-plugin-netlify`
   ],
   siteMetadata: {
     title: `Outlandnish Racing`,

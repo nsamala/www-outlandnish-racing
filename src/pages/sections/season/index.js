@@ -10,7 +10,7 @@ export default ({ feature }) => (
     <br/>
     <h4 className='highlight'>Time Attack</h4>
     <br/>
-    <p>I'll be maximizing my seat time with coaching from an ex-Formula 4 driver. You'll find me doing:</p>
+    <p>I'll be maximizing my seat time with coaching from open wheel drivers.. You'll find me doing:</p>
     <ul>
       <li>#GRIDLIFE TrackBattle</li>
       <li>Global Time Attack</li>
@@ -19,6 +19,6 @@ export default ({ feature }) => (
     <br/>
     <h4 className='highlight'>Drift</h4>
     <br/>
-    <p>Nailing down the drift line and increasing consistency during fun days as well as exhibitions.</p>
+    <p>Coaching is once again the main priority. I'll be working on nailing down the drift line and increasing consistency during fun days as well as exhibitions.</p>
   </RightSection>
 )
