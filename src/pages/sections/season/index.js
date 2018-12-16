@@ -10,7 +10,7 @@ export default ({ feature }) => (
     <br/>
     <h4 className='highlight'>Time Attack</h4>
     <br/>
-    <p>I'll be maximizing my seat time with coaching from open wheel drivers.. You'll find me doing:</p>
+    <p>I'll be maximizing my seat time with coaching from open wheel drivers. You'll find me doing:</p>
     <ul>
       <li>#GRIDLIFE TrackBattle</li>
       <li>Global Time Attack</li>
